@@ -1,14 +1,14 @@
 <template>
   <div>
-    <Navbar/>
-
-    <NavButton/>
+    <!-- <Navbar/> -->
 
     <SideBar/>
 
+    <!-- <NavButton/>
+
     <Content/>
 
-    <Foot/>
+    <Foot/> -->
   </div>
   
 </template>

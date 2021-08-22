@@ -4,7 +4,7 @@
             <div class="col-6 pt-1">
                 <a class="text-muted" href="#">
                     <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" focusable="false"
-                        class="style-scope yt-icon"
+                        class="style-scope yt-icon ml-4"
                         style="pointer-events: none; display: block; width: 100px; height: 50%;">
                         <g viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon">
                             <g class="style-scope yt-icon">

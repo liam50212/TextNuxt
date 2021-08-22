@@ -78,10 +78,6 @@
 
     @media (max-width:375px) {
 
-        .nav-button {
-            left: 20px;
-        }
-
         .btn6 {
             display: none;
         }

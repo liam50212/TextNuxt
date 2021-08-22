@@ -5,15 +5,13 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
           <div class="col mb-5" v-for="(post, index) in posts" :key="index">
             <div style="position: relative;">
-              <img class="main-img"
-                :src="post.img">
+              <img class="main-img" :src="post.img">
               <div class="video-thumbnail-overlay-bottom-group">
                 <div class="ytm-thumbnail-overlay-time-status-renderer" data-style="DEFAULT">{{post.time}}</div>
               </div>
             </div>
             <div class="img-title d-flex mt-2">
-              <img class="style-scope yt-img-shadow mt-2 mr-2" alt=""
-                :src="post.icon">
+              <img class="style-scope yt-img-shadow mt-2 mr-2" alt="" :src="post.icon">
               <h5>{{ post.title }}</h5>
               <a href="#">
                 <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
@@ -42,7 +40,7 @@
   }
 
   .main-img {
-    width: 380px;
+    width: 100%;
     height: auto;
     display: block;
     margin: auto;
@@ -111,23 +109,23 @@
 
   @media (max-width:1440px) {
     .main-img {
-      width: 380px;
+      width: 300px;
     }
 
     .col {
-      max-width: 380px;
-      min-width: 380px;
+      max-width: 300px;
+      min-width: 300px;
       margin: auto;
     }
 
     .img-title {
-      max-width: 380px;
-      min-width: 380px;
+      max-width: 300px;
+      min-width: 300px;
     }
 
     h5,
     .img-date {
-      font-size: 17px;
+      font-size: 15px;
     }
 
     h5 {
