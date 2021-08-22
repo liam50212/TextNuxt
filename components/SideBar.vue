@@ -1,16 +1,16 @@
 <template>
     <div>
-        <b-button class="side" variant="light" v-b-toggle.sidebar-variant>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+        <b-button v-b-toggle.sidebar-variant class="side mt-1" variant="light" style="border-color: #fff;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
         </b-button>
         <b-sidebar id="sidebar-variant" shadow>
-            <div class="px-3 py-2">
+            <div class="px-3 py-2 mt-3">
                 <b-list-group>
-                    <div class="d-flex" v-for="(pro, index) in pros" :key="index">
+                    <div v-for="(pro, index) in pros" :key="index" class="d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-justify-left mt-3" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -21,7 +21,7 @@
                     </div>
                     <hr style="width: 100%;">
 
-                    <div class="d-flex" v-for="(pro1, index) in pros1" :key="index">
+                    <div v-for="(pro1, index) in pros1" :key="index" class="d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-justify-left mt-3" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -33,7 +33,7 @@
                     <hr style="width: 100%;">
 
                     <p style="font-size: 15px;">訂閱內容</p>
-                    <div class="d-flex" v-for="(pro2, index) in pros2" :key="index">
+                    <div v-for="(pro2, index) in pros2" :key="index" class="d-flex">
                         <img :src="pro2.icon" alt="" class="mt-2" style="width: 24px;height: 24px;border-radius: 24px;">
                         <b-list-group-item class="border-0" href="#">{{ pro2.title }}
                         </b-list-group-item>
@@ -41,7 +41,7 @@
                     <hr style="width: 100%;">
 
                     <p style="font-size: 15px;">更多 YOUTUBE 功能</p>
-                    <div class="d-flex" v-for="(pro3, index) in pros3" :key="index">
+                    <div v-for="(pro3, index) in pros3" :key="index" class="d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-justify-left mt-3" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -52,7 +52,7 @@
                     </div>
                     <hr style="width: 100%;">
 
-                    <div class="d-flex" v-for="(pro4, index) in pros4" :key="index">
+                    <div v-for="(pro4, index) in pros4" :key="index" class="d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-justify-left mt-3" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -66,24 +66,6 @@
         </b-sidebar>
     </div>
 </template>
-
-<style>
-    .side {
-        position:fixed;
-        z-index: 9998;
-        top: 12px;
-    }
-
-    .b-sidebar-header,
-    .b-sidebar-body {
-        background-color: #fff;
-    }
-
-    .b-sidebar {
-        width: 240px;
-        z-index: 9999;
-    }
-</style>
 
 <script>
     export default {
@@ -179,3 +161,29 @@
         }
     }
 </script>
+
+<style>
+    .side {
+        position:fixed;
+        z-index: 9998;
+        top: 12px;
+    }
+
+    .b-icon.bi {
+        margin-top: 15px;
+    }
+
+    .b-sidebar-header,
+    .b-sidebar-body {
+        background-color: #fff;
+    }
+
+    .b-sidebar {
+        width: 240px;
+        z-index: 9999;
+    }
+
+    @media (max-width:375px) {
+        
+    }
+</style>

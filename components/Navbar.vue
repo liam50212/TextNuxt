@@ -1,10 +1,10 @@
 <template>
     <header class="blog-header fixed-top py-3 px-3 border-bottom bg-light">
         <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-6 pt-1">
+            <div class="col-4 pt-1">
                 <a class="text-muted" href="#">
                     <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" focusable="false"
-                        class="style-scope yt-icon ml-4"
+                        class="style-scope yt-icon ml-4 y-icon"
                         style="pointer-events: none; display: block; width: 100px; height: 50%;">
                         <g viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon">
                             <g class="style-scope yt-icon">
@@ -44,17 +44,59 @@
                 </a>
             </div>
 
-            <div class="col-6 d-flex justify-content-end align-items-center">
-                <a class="text-muted" href="#" aria-label="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
-                        viewBox="0 0 24 24" focusable="false">
-                        <title>Search</title>
-                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
-                        <path d="M21 21l-5.2-5.2"></path>
+            <div class="col-4">
+                <form class="form-inline mt-2 mt-md-0 align-items-center justify-content-center">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img"
+                            viewBox="0 0 24 24" focusable="false">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                            <path d="M21 21l-5.2-5.2"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="text-muted icon1" href="#" aria-label="Search">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon" width="28" height="28"
+                        style="pointer-events: none; display: block;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"
+                                class="style-scope yt-icon">
+                            </path>
+                        </g>
                     </svg>
                 </a>
-                <button type="button" class="btn btn-primary btn-circle btn-sm">L</button>
+                <a class="text-muted ml-4 icon2" href="#" aria-label="Search">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon" width="28" height="28"
+                        style="pointer-events: none; display: block;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M16,4v4h4V4H16z M19,7h-2V5h2V7z M16,10v4h4v-4H16z M19,13h-2v-2h2V13z M10,4v4h4V4H10z M13,7h-2V5h2V7z M10,10v4h4v-4H10z M13,13h-2v-2h2V13z M16,16v4h4v-4H16z M19,19h-2v-2h2V19z M10,16v4h4v-4H10z M13,19h-2v-2h2V19z M4,4v4h4V4H4z M7,7H5V5h2V7z M4,10 v4h4v-4H4z M7,13H5v-2h2V13z M4,16v4h4v-4H4z M7,19H5v-2h2V19z"
+                                class="style-scope yt-icon">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <a class="text-muted icon3 ml-4" href="#" aria-label="Search">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon" width="28" height="28"
+                        style="pointer-events: none; display: block;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
+                                class="style-scope yt-icon">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <button type="button" class="btn btn-primary btn-circle btn-sm ml-4">L</button>
             </div>
         </div>
     </header>
@@ -70,4 +112,57 @@
         font-size: 8px;
         text-align: center;
     }
+
+    .form-control {
+        width: auto;
+        min-width: 400px;
+        margin: 0;
+    }
+
+    .btn-outline-secondary {
+        width: 50px;
+        height: 38px;
+    }
+
+    @media (max-width:1555px) {
+        .form-control {
+            min-width: 300px;
+        }
+    }
+
+    @media (max-width:1246px) {
+        .form-control {
+            min-width: 200px;
+        }
+    }
+
+    @media (max-width:956px) {
+        .form-control {
+            max-width: 50%;
+            min-width: 100px;
+        }
+    }
+
+    @media (max-width:375px) {
+        .form-control {
+           display: none;
+        }
+
+        .btn-outline-secondary {
+        width: 40px;
+        }
+
+        .icon1 , .icon2 ,.icon3 , .btn-outline-secondary {
+            display: none;
+        }
+
+        .btn-circle.btn-sm {
+            margin-top: 8px;
+        }
+
+        .y-icon {
+            margin-left: 100px;
+        }
+    }
+
 </style>
